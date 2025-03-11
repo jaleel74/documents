@@ -1,0 +1,325 @@
+Testing Exercises:
+•What is the primary goal of manual testing?
+•To find defects in software 
+•To automate the testing process
+•To reduce the time required for testing
+•To increase the efficiency of developers
+ANS : TO FIND THE DEFECTS IN THE SOFTWARE
+
+•Which of the following is NOT a phase of the manual testing process?
+•Test Planning
+•Test Execution
+•Test Automation
+•Test Closure
+ANS : TEST AUTOMATION
+
+•Which type of testing involves testing the software as a whole to ensure that all components work together?
+•Unit Testing 
+•Integration Testing
+•System Testing 
+•Acceptance Testing
+ANS : SYSTEM TESTING
+
+•Which testing technique involves testing a system's functionality without knowing its internal code structure?
+•White-box testing
+•Black-box testing
+•Gray-box testing
+•Glass-box testing
+ANS : BLACK BOX TESTING
+
+•What is exploratory testing?
+•Testing based on pre-defined test cases
+•Testing without any specific test cases or plans
+•Testing only the critical functionalities
+•Testing performed by an external team
+ANS : TESTING WITH OUT ANY SPECIFIC TEST CASES OR PLANS
+
+•In which phase of the software development lifecycle is manual testing typically conducted?
+•Requirement Analysis
+•Design
+•Implementation
+•Testing
+ANS : TESTING
+•What is the purpose of regression testing?
+•To validate if the software meets the specified requirements
+•To ensure that new changes haven't adversely affected existing functionality
+•To test the software in various operating environments
+•To verify if the software is user-friendly
+ANS : To ensure that new changes haven't adversely affected existing functionality
+
+•Which of the following is NOT a common type of manual testing?
+•Functional Testing
+•Performance Testing
+•Security Testing
+•User Acceptance Testing
+ANS : Security Testing
+
+
+•What is the main advantage of manual testing over automated testing?
+•Greater test coverage
+•Faster execution of tests
+•Human intuition and creativity
+•Consistency in test execution
+ANS : Human intuition and creativity
+
+•What is the purpose of smoke testing?
+•To verify if the software is stable enough for further testing
+•To test the core functionalities of the software
+•To test the software in various browser environments
+•To ensure that the software meets all specified requirements
+
+ANS : To test the core functionalities of the software
+
+•What is the purpose of usability testing?
+•To verify if the software performs efficiently under high load
+•To ensure that the software is user-friendly and intuitive
+•To test the software across different operating systems
+•To check for security vulnerabilities in the software
+
+ANS : To ensure that the software is user-friendly and intuitive
+
+•Which testing technique involves executing the test cases in a random order to identify defects?
+•Ad-hoc Testing
+•Boundary Testing
+•Equivalence Partitioning
+•Sanity Testing
+ANS : Ad-hoc Testing
+•What is the main focus of acceptance testing?
+•Validating if the software meets specified requirements
+•Testing individual components or modules of the software
+•Evaluating the overall performance of the software
+•Ensuring that the software is compatible with different devices
+
+ANS : Validating if the software meets specified requirements
+
+•Which of the following is NOT a commonly used manual testing technique?
+•Boundary Value Analysis
+•Equivalence Partitioning
+•Fuzz Testing
+•Code Coverage Analysis
+
+ANS : CODE COVEREAGE ANALYSIS
+•What is the purpose of ad-hoc testing?
+•To verify if the software performs well under normal conditions
+•To execute pre-defined test cases systematically
+•To test the software without any specific test cases or plans
+•To test the software in different languages and locales
+
+ANS : To test the software without any specific test cases or plans
+
+•What is the main advantage of pairwise testing?
+•It ensures that every possible combination of inputs is tested
+•It reduces the number of test cases while providing good coverage
+•It focuses solely on testing user interfaces
+•It allows for automated test execution without human intervention
+
+ANS : It reduces the number of test cases while providing good coverage
+
+•Which type of testing involves executing test cases in a controlled environment that simulates the production environment?
+•Alpha Testing
+•Beta Testing
+•Regression Testing
+•Smoke Testing
+
+ANS : Alpha Testing
+
+•What is the primary purpose of sanity testing?
+•To ensure that the software meets all specified requirements
+•To verify if the software is stable enough for further, more comprehensive testing
+•To test the software in a variety of real-world scenarios
+•To evaluate the software's performance under varying load conditions
+
+ANS : To verify if the software is stable enough for further, more comprehensive testing
+
+•Which testing technique involves testing the software's response to unexpected inputs or conditions?
+•Negative Testing
+•Positive Testing
+•Boundary Testing
+•Equivalence Partitioning
+
+ANS : Negative Testing
+
+•What is the primary focus of compatibility testing?
+•To verify if the software performs efficiently under high load
+•To ensure that the software is compatible with different devices, browsers, and operating systems
+•To test individual components or modules of the software
+•To evaluate the software's security features
+
+ANS : To ensure that the software is compatible with different devices, browsers, and operating systems
+
+•What is the primary goal of regression testing?
+•To ensure that the software meets specified requirements
+•To verify if the software is stable enough for release
+•To ensure that new changes haven't introduced defects in existing functionality
+•To test the software in various operating environments
+
+ANS : To ensure that new changes haven't introduced defects in existing functionality
+
+•Which testing technique involves testing the software's ability to recover from crashes or failures?
+•Recovery Testing
+•Performance Testing
+•Compatibility Testing
+•Installation Testing
+ANS : Recovery Testing
+•What is the main focus of localization testing?
+•To verify if the software performs efficiently under high load
+•To ensure that the software is compatible with different devices
+•To test the software's behavior in different locales and languages
+•To evaluate the software's security features
+
+ANS : To test the software's behavior in different locales and languages
+
+•Which of the following is NOT a category of software testing?
+•White-box testing
+•Black-box testing
+•Gray-box testing
+•Blue-box testing
+
+ANS : Blue-box testing
+•What is the purpose of static testing?
+•To verify the software's behavior under varying load conditions
+•To test the software without executing the code
+•To simulate real-world usage scenarios
+•To evaluate the software's compatibility with different devices
+
+•What is the primary focus of boundary testing?
+•To test the software's ability to handle unexpected inputs or conditions
+•To test the software's response to extreme or boundary values
+•To verify if the software meets specified requirements
+•To ensure that the software is user-friendly and intuitive
+
+•What is the purpose of test case prioritization?
+•To ensure that all test cases are executed in a specific order
+•To identify which test cases should be executed first based on their importance
+•To allocate resources for test case execution
+•To generate additional test cases automatically
+
+•Which testing technique involves testing the software's ability to handle large volumes of data?
+•Volume Testing
+•Stress Testing
+•Load Testing
+•Scalability Testing
+ANS : LOAD TESTING 
+•What is the main focus of smoke testing?
+•To verify if the software is stable enough for further testing
+•To test the core functionalities of the software
+•To test the software's performance under varying load conditions
+•To test the software's compatibility with different devices
+ANS : To verify if the software is stable enough for further testing
+•What is the primary goal of acceptance testing?
+•To verify if the software meets specified requirements
+•To ensure that the software is user-friendly and intuitive
+•To identify defects in the software
+•To test the software's performance under varying load conditions 
+ANS : To verify if the software meets specified requirements
+•Define Software Development Life Cycle (SDLC) and briefly explain its primary phases.
+ANS : it is standard procedure to develop a new software.
+it has different stages like  
+1. requirement analysis 
+2.feasabilty study
+3. design 
+4.coding
+5. testing
+6.installation
+7.maintenance
+
+1.Requirement Analysis :
+It is nothing collection of requirement fom customer place. it is done by Businees Analyst (or) Product Analyst. where B.A will goes to customer's place and collects the requirement in business language and converts into software language and explains the requirement to Project manager,Architect,Developers,test engineers etc.This complete process is called "Requirement Analysis".
+Here B.A acts bridge between customer & company
+2.Feasibility Study :
+Once after requirement collection is completed then only we go for feasibility study .this is done by a team consists of Project Manager,Architect,Finance Team and HR team.
+This is the stage where company will decide whether to take up the project or not , if we take up the project company will check do we sufficent resources,Technologies and Lab setups.
+3.Design :
+There are two types of design. 
+1.High Level Design :the design of the architure of the product is called "High Level Design".
+It is done by Architect (or) UI
+2.low level design :the detailed design of smallest feature is called "Low Level Design".
+It is done by senior developer.
+4.Coding :
+It is nothing but writting the programs.It is done by development engineers where in they implement the software according to the customer requirement specification.
+5.Testing :
+Once after coding is completed the next phase is testing . it is done by test engineers where they test the software according to customer's requirement specification in order to find the defects in the software is called "Testing". If they find any bugs,it will send to developers and developers will fixes that bug and send it to testing team this process will continues untill the software is stable.
+6.Installation :
+Once after testing is completed and software is ready,we will install the software in the customer's place so that customers can start to use the software and run the business.
+7.Maintenance :
+Once after the software is installed and customer will start to use the software and run the business,while using the software if customers faces any issues then copmany will fix the issues for free depending on the agreement between the company & customer . This phase is called "Maintenance". the testing team  will monitor 
+•What are the main objectives of the Requirements Gathering phase in SDLC?
+ANS : it is nothing but collection of requirement. where B.A goes to customer's place and collects the req in the B.R.S and converts into S.R.S
+explains the requirement to P.M, ARCHITECT,DEVELOPERS,TESTER ETC,
+here B.A acts bridgee between the company and customer
+
+•Explain the significance of the Design phase in the SDLC process.
+ANS : once the requirement collection is done the next phase is design
+there are 2 levels of design
+1.High Level Design :the design of the architure of the product is called "High Level Design".
+It is done by Architect (or) UI
+2.low level design :the detailed design of smallest feature is called "Low Level Design".
+It is done by senior developer.
+
+•Discuss the importance of thorough Testing during the SDLC.
+ANS : once the software is developed and developers will send the build to the test engineers. testing team will install the build in test server and test the software by executing test cases. while executing the test cases if they find any bugs they will prepare a defect report by using defect tracking tools and developers will fixes the bug and again new build will be send to the testing team . now testing will again instal and the new build. this process will continues until the software is stable . this process is called "testing".
+•Differentiate between Waterfall and Agile methodologies in SDLC. Highlight the advantages and disadvantages of each.
+
+ANS : water fall is old and traditional model . it is a standard procedure to develop a softwere.
+agile model is iterative and incremental procedure to develop a software.
+we deliever a piece of software
+
+ ADVANTAGES OF WATERFALL 
+•simple and easy to understand and use
+•it is easy to maintain 
+•requirements are not going to change we can expect good quality of product
+•initial ivestment is less
+DISADVANTAGES OF WATERFALL 
+•can adopt the changes in the req
+•rework cost is high
+•not suitable for complex projects where risk factor is high
+•not suitable for the projects where changes are required continously.
+ADVANTAGES OF AGILE
+•release will short and frequent
+•can adopt changes at any stage
+•delevering the project with fuctionalities developed and tested
+•customer do not have to wait utill the software is developed
+•quick delivery with good quality
+disadvantages
+•required experince team members
+•difficult planning
+•difficult to maintain
+
+
+What is the purpose of the Implementation phase in SDLC? How does it differ from the Deployment phase?
+ANS: implementation:  based on design document coding (or) implemention will be start 
+deployment : developer will develop fully framed structure of code with proper outcome
+
+•Describe the role of stakeholders in the SDLC process. How do their involvement and feedback influence project outcomes?
+•Explain the concept of Iterative Development in the context of SDLC. How does it contribute to project success?
+ANS :  ITERATIVE 
+the same cycle is repeated again and again over period of cycles 
+
+•Discuss the importance of Documentation throughout the SDLC. What types of documents are typically produced at each phase?
+•How does the Maintenance phase contribute to the overall success and sustainability of a software product? Discuss the activities involved in this phase.
+ANS : Once after the software is installed and customer will start to use the software and run the business,while using the software if customers faces any issues then copmany will fix the issues for free depending on the agreement between the company & customer . This phase is called "Maintenance". the testing  team will monitor.
+
+•Outline the key challenges faced during each phase of the SDLC and propose strategies to mitigate them.
+•Describe the role of Quality Assurance (QA) and Quality Control (QC) in ensuring the reliability and quality of software products during SDLC.
+ANS : QUALTY ASSURANCE 
+•it is a procedure focus on providing assurance that quality requested is achieved
+•it aims to prevent the defect
+•it is method to mange quality verification'
+•it does not involve in execution of program
+QUALITY CONTROL
+•it is procedure focus on fullfilling the quality requested
+•it aims to identify the defect
+•it is method to manage quality validation
+•it always invloves in the execution of program
+
+•Explain the concept of Risk Management in SDLC. How can risks be identified, assessed, and mitigated throughout the software development process?
+•Discuss the importance of Change Management in SDLC. How should changes be managed to minimize disruptions and ensure project success?
+•Describe the role of Project Management in overseeing and coordinating the various activities within the SDLC. What skills are essential for an effective project manager in this context?
+ANS: P.M will some times sits with B.A while collecting the requirement from the customer. 
+P.M will gathers all the information from the architect,finance team ,hr team and B.A
+architect will think from resource point of view. if we take this project do we sufficient lab set ups,resources and technology all this will decide architect
+finance team will think from money point of view. how much should be invested, what is the operational cost , if we take the project do we get profit or not. all these are decided by finance team
+hr team will think how freshers and experienced person should hire for this project.
+
+P.M will gathers infromation from them and he will takes the final call whether to take the project or not.
+
