@@ -1,0 +1,312 @@
+Python:
+What is the data type of the result in the following expression: 10 / 2?
+a. int
+b. float
+c. str
+d. bool
+Ans:b
+Which data type is used to represent a sequence of characters in Python?
+a. int
+b. float
+c. str
+d. list
+Ans :c
+
+What is the output of bool("False")?
+a. False
+b. True
+c. TypeError
+d. None
+Ans:a
+
+In Python, which data type is used to store an ordered collection of elements with no duplicate values?
+a. tuple
+b. list
+c. set
+d. dictionary
+Ans:d
+What is the result of the expression 3 ** 2?
+a. 5
+b. 6
+c. 9
+d. 27
+Ans:c
+What does the % operator do in Python?
+a. Exponentiation
+b. Floor division
+c. Modulus
+d. Multiplication
+Ans:c
+What is the result of the expression 5 // 2?
+a. 2.5
+b. 2
+c. 3
+d. 2.0
+Ans:b
+In Python, how is a block of code inside an if statement defined?
+a. By indentation
+b. By braces {}
+c. By parentheses ()
+d. By square brackets []
+Ans: a
+
+What is the purpose of the elif keyword in Python?
+a. It signifies the end of an if statement.
+b. It is used to catch exceptions.
+c. It is an abbreviation for "else if" and is used for multiple conditions.
+d. It represents a loop in Python.
+Ans:c
+In a for loop in Python, what does the range(5) represent?
+a. The numbers 0 to 5 (inclusive)
+b. The numbers 1 to 5 (inclusive)
+c. The numbers 0 to 4 (inclusive)
+d. The numbers 1 to 4 (inclusive)
+Ans:c
+What is the output of int("10")?
+a. 10
+b. "10"
+c. TypeError
+d. None
+Ans:a
+Which data type is mutable (can be modified after creation) in Python?
+a. int
+b. float
+c. str
+d. list
+Ans:d
+In Python, how do you check the type of a variable?
+a. typeof(var)
+b. typeOf(var)
+c. type(var)
+d. var.type()
+Ans:c
+
+What is the result of the expression 5 != 5?
+a. True
+b. False
+c. Error
+d. None
+Ans:b
+What is the purpose of the and operator in Python?
+a. Logical AND
+b. Bitwise AND
+c. Assignment AND
+d. Concatenation
+Ans:a
+Which operator is used for string concatenation in Python?
+a. +
+b. -
+c. *
+d. /
+Ans:a
+What does the in operator do in Python?
+a. Membership test for lists and strings
+b. Exponentiation
+c. Bitwise AND
+d. Modulus
+Ans:a
+In Python, what is the purpose of the else clause in an if statement?
+a. It is used for error handling.
+b. It contains the main block of code.
+c. It is executed when the if condition is True.
+d. It is executed when the if condition is False.
+Ans:d
+How can you terminate a loop prematurely in Python?
+a. stop statement
+b. end statement
+c. break statement
+d. terminate statement
+Ans:c
+What is the purpose of the pass statement in Python?
+a. It indicates the end of a code block.
+b. It is a placeholder and does nothing.
+c. It is used to define a function.
+d. It is a comment.
+Ans;b
+What is the result of the expression 8 // 3?
+a. 2.67
+b. 2.0
+c. 2
+d. 2.5
+Ans:c
+What is the purpose of the or operator in Python?
+a. Logical OR
+b. Bitwise OR
+c. Assignment OR
+d. Concatenation
+Ans:a
+Which operator is used for exponentiation in Python?
+a. **
+b. ^
+c. //
+d. %
+Ans:a
+In Python, what is the purpose of the elif clause in an if statement?
+a. It is executed when the if condition is True.
+b. It is used for error handling.
+c. It is a short form of "else if" and is used for multiple conditions.
+d. It contains the main block of code.
+Ans:c
+What is the output of the following code snippet?
+num = 7
+if num % 2 == 0:
+ print("Even")
+elifnum % 3 == 0:
+print("Divisible by 3")
+else:
+ print("Odd")
+a. Even
+b. Divisible by 3
+c. Odd
+d. None
+Ans:c
+num = 7
+if num % 2 == 0:
+ print("Even")
+elifnum % 3 == 0:
+print("Divisible by 3")
+else:
+ print("Odd")
+
+
+
+programs:
+
+Task 1: Arithmetic Operators
+# Write a program that takes two numbers from the user and performs the following operations:
+# - Addition
+# - Subtraction
+# - Multiplication
+# - Division
+1.AIRTHEMATIC 
+ADD:
+ex :a=100
+    b=200
+    sum =a+b
+    print("sum of two numbers is :",sum)
+sub :
+ex:a=100
+   b=20
+   diff=a-b
+   print("difference of two numbers is :",diff)
+multiplying: 
+ex: a=100
+    b=2
+    product=a*b
+    print("product of two numbers is :",product)
+divison :
+ex :a=100
+    b=20
+    div=a/b
+    print("division of two numbers is :",div)
+
+
+# Task 2: Logical Operators
+# Write a program that asks the user for their age.
+# - If the age is less than 18, print "You are a minor."
+# - If the age is 18 or older, print "You are an adult."
+age=21
+if age<18:
+print(“you are minor”)
+else:
+print(“you are an adult”)
+
+# Task 3: Comparison Operators
+# Write a program that compares two strings entered by the user.
+# - If the strings are equal, print "Strings are equal."
+# - If not, print "Strings are not equal."
+Ans; string1=input(“enter the first string:”)
+       String2 =input(“enter the second string:”)
+If string1==string2:
+Print(“strings are equal”)
+Else:
+Print(“strings are not equal”)
+
+# Task 4: While Loop
+# Write a program that uses a while loop to print the numbers from 1 to 5.
+Ans: i=1
+     while i<=6:
+print(i)
+i +=1
+
+# Task 5: For Loop
+# Write a program that uses a for loop to iterate over a list of fruits and print each fruit.
+Ans:fruits =[“apple”,”banana”,”cherry”,”grapes”]
+For fruits in fruits:
+Print(fruits)
+
+# Task 6: Lists
+# Create a list of numbers and perform the following operations:
+# - Add a new number to the list.
+# - Remove an existing number from the list.
+
+Ans: list=[10,20,30,40,50]
+list.append(60)
+List.remove(30)
+print(30)
+
+# Task 7: Dictionaries
+# Create a dictionary representing a person with attributes like name, age, and city.
+# - Print the person's information.
+# - Add a new attribute (e.g., occupation) to the dictionary.
+
+Ans:Dict={“name”:”pasha”,”age”:”27”,”city”:”Eluru”}
+print(“person Information:”)
+print(“name:”,person[“name”])
+print(“age:”,person[“age”])
+print(“city:”,person[“city”])
+person[“occupation”]= “software engineer”
+
+print(“\n updated Information with occupation:”)
+print(“name:”,person[“name”])
+print(“age:”,person[“age”])
+print(“city:”,person[“city”])
+Print(“occupation:”,person[“occupation”]
+
+
+
+
+# Task 8: Combine Control Statements and Operators
+# Write a program that asks the user to enter two numbers.
+# - If the sum of the numbers is greater than 10, print "Sum is greater than 10."
+# - If the sum is less than or equal to 10, print "Sum is less than or equal to 10."
+
+Ans: num1= float(input(“enter the first number:”)
+         Num2= float(input(“enter the second number:”)
+sum of numbers=num1 + num2
+If sum of numbers>10:
+print(“sum is greater than 10:”,sum of numbers)
+else:
+Print(“sum is less than or equal to 10:”,sum of numbers)
+
+
+9.Write a Python program to count the occurrences of each word in a given string.
+Ans;def word_count(str):
+counts = dict()
+    
+        words = str.split()
+
+        for word in words:
+        
+        if word in counts:
+            
+            counts[word] += 1
+        else:
+            
+            counts[word] = 1
+
+    
+    return counts
+
+10.Write a Python program to find the factorial of a given number using recursion.
+
+Ans: def factorial(n): 
+	
+	
+	if (n==1 or n==0):
+		
+		return 1
+	
+	else:
+		
+		return (n * factorial(n - 1)) 
