@@ -1,0 +1,123 @@
+MySql_Tasks
+Task- 1:
+Create two tables: users and orders. 
+Each user can have multiple orders. 
+Write a SQL query to fetch the names of users along with the total number of orders they have placed.
+Ans : create table users_(userID int,userName varchar(60),primary key (userID));
+insert into users_ values(1,'jaleel'),(2,'nandini'),(3,'ramudu'),(4,'rajesh');
+create table orders1(orderID int,userID int,orderdate date,primary key(orderID),foreign key(userID) references users_(userID));
+insert into orders1 values
+(1,1,'2025-02-23'),
+(2,1,'2025-03-01'),
+(3,2,'2025-01-14'),
+(4,3,'2025-02-24'),
+(5,2,'2025-03-04');
+select u.userName,count(o.orderID) as total_orders from users_ u left join orders1 o on u.userID = o.userID group by u.userID;
+Task-2:
+You are working with a database that stores information about students and their courses. There are three tables: students, courses, and enrollments. 
+Write a SQL query to display the names of students along with the courses they have enrolled in.
+Ans: select s.name as studentName,c.courseName from students s join enrollments e on s.studentID = e.studentID
+join courses c on e.courseID = c.courseID;
+Task-3:
+You need to retrieve data from a database that tracks product sales. There are tables for products, sales, and customers. 
+Write a SQL query to show the total sales amount for each product category.
+Ans : SELECT p.category, SUM(p.price * s.quantity) AS total_sales_amount
+FROM sales s JOIN products1 p ON s.productID = p.productID  GROUP BY p.category;
+Task-4:
+You have a database containing information about employees in a company. 
+Write a SQL query to list the names of employees along with their respective managers' names.
+Ans : SELECT e.emp_name AS Employee_Name,
+       m.emp_name AS Manager_Name
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.emp_id;
+Task-5:
+You are managing a database for an online store. 
+Write a query to retrieve the top 10 bestselling products based on the total number of units sold.
+Ans : SELECT p.productName,SUM(s.quantitySold) AS total_units_sold
+FROM products3 p
+JOIN sales1 s ON p.productID = s.productID
+GROUP BY p.productName
+ORDER BY total_units_sold DESC
+LIMIT 10;
+Task-6:
+You have tables for students, courses, and grades. 
+Write a SQL query to display the average grade for each student.
+Ans : SELECT s.student_name,
+       AVG(g.grade) AS average_grade
+FROM students2 s
+JOIN grades g ON s.student_id = g.student_id
+GROUP BY s.student_name ;
+Task-7:
+You are working with a database for a social media platform. 
+Write a query to show the users who have the most friends.
+Ans : SELECT u.username, COUNT(*) AS total_friends
+FROM users u
+JOIN (
+    SELECT user_id_1 AS user_id FROM friends
+    UNION ALL
+    SELECT user_id_2 AS user_id FROM friends
+) f ON u.user_id = f.user_id
+GROUP BY u.username
+ORDER BY total_friends DESC
+LIMIT 1;
+
+Task-8:
+You have tables for employees and departments. 
+Write a query to display the department names along with the total number of employees in each department.
+Ans : SELECT d.department_name,
+       COUNT(e.employee_id) AS total_employees
+FROM departments d
+LEFT JOIN employees e ON d.department_id = e.department_id
+GROUP BY d.department_name;
+
+Task-9:
+You need to retrieve data from a database tracking product inventory. 
+Write a query to display products with low stock (less than 10 units).
+Ans : SELECT product_id,
+       product_name,
+       stock_quantity,
+       price
+FROM products
+WHERE stock_quantity < 10;
+
+Task-10:
+You have tables for customers and orders. 
+Write a query to show the average order value for each customer.
+Ans: SELECT c.customer_name,
+       AVG(o.order_value) AS average_order_value
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_name;
+
+Task-11:
+In a database storing movie information, 
+Write a query to show the top 5 highest-rated movies by users.
+Ans: SELECT m.movie_name,
+       AVG(r.rating) AS average_rating
+FROM movies m
+JOIN ratings r ON m.movie_id = r.movie_id
+GROUP BY m.movie_name
+ORDER BY average_rating DESC
+LIMIT 5;
+
+Task-12:
+You have tables for invoices and payments. 
+Write a query to show the unpaid invoices and their total amount.
+
+Ans: SELECT i.invoice_id,
+       i.customer_id,
+       i.invoice_date,
+       i.total_amount,
+       (i.total_amount - IFNULL(SUM(p.payment_amount), 0)) AS unpaid_amount
+FROM invoices i
+LEFT JOIN payments p ON i.invoice_id = p.invoice_id
+GROUP BY i.invoice_id
+HAVING unpaid_amount > 0;
+
+
+
+
+
+
+
+
