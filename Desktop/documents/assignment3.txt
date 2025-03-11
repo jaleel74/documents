@@ -1,0 +1,193 @@
+Task-1: create a table with name products and entries are 
+ProductID, Product name, supplier ID, categoryID, Quantity per unit, unit price, units in stock, units on order, reorder level, discontinued.
+Indexes: primary key product name, foreign key is products categories & products suppliers.
+Ans:create table suppliers(supplierID int);
+ select * from suppliers;
+ alter table suppliers add (supplierName varchar(60) , contactname varchar(60));
+ select * from suppliers;
+  insert into suppliers values
+ (1,'supplier A','contact A'),
+ (2,'supplier B','contact B'),
+ (3,'supplier C','contact C');
+ CREATE TABLE products (
+    ProductID INT ,
+    ProductName VARCHAR(60) ,
+    SupplierID INT,
+    CategoryID INT,
+    QuantityPerUnit VARCHAR(50),
+    UnitPrice DECIMAL(10, 2),
+    UnitsInStock INT,
+    UnitsOnOrder INT,
+    ReorderLevel INT,
+    Discontinued BOOLEAN,
+    primary key(productID),
+    FOREIGN KEY (SupplierID) REFERENCES suppliers(SupplierID),
+    FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID));
+
+   select * from products;
+   insert into products values
+   (1,'product A',1,1,'10boxes',15.00,100,20,10,false),
+   (2,'product B',2,1 ,'20boxes',25.00,50,10,5,false),
+   (3,'prodcut c',1,2,'20boxes',5.00,200,30,15,true),
+   (4,'product D',3,3,'13boxes',30.00,2,0,0,true),
+   (5,'product E',2,2,'5boxes',50.00,10,5,3,false);
+Queries:
+
+1.Write a mysql query to get Product name and quantity/unit.
+Ans : select productName,Quantityperunit from  products;
+2.Write a MySQL query to get current Product list (Product ID and name).
+Ans : select productID,productName from products where discontinued = false;
+3.Write a MySQL query to get discontinued Product list (Product ID and name).
+Ans: select ProductId,ProductName from products where discontinued = true;
+4.Write a MySQL query to get most expense and least expensive Product list (name and unit price).
+Ans; select productName,unitprice from products order by unitprice desc limit1;
+        select productName,unitprice from products order by unitprice asc limit1;
+5.Write a MySQL query to get Product list (id, name, unit price) where current products cost less than 20 rupees.
+Ans:select productID,productName,unitprice from products where unitprice<20 and discontinued=false; 
+Task-2: 
+1.Create a table name departments with primary key column(department_id).
+2.Columns in the table should be department_id, department_name & location_id.
+Hint:
+CREATE TABLE departments
+    ( department_id INTEGER PRIMARY KEY
+    , department_name VARCHAR(30)
+    , location_id INTEGER
+    ) ;
+
+3.Create another table with name employees with a foreign key.
+Hint:
+CREATE TABLE employees
+   ( employee_id INTEGER
+   , first_name VARCHAR(20)
+   , last_name VARCHAR(25) 
+   , email VARCHAR(25)
+   , phone_number VARCHAR(20)
+   , hire_date DATE
+   , job_id VARCHAR(10)
+   , salary INTEGER
+   , commission_pct INTEGER
+   , manager_id INTEGER
+   , department_id INTEGER
+   , constraint pk_emp primary key (employee_id) 
+   , constraint fk_deptno foreign key (department_id) references departments(department_id)  
+   ) ;
+4.Insert 16 Records into departments Table.
+Ans: INSERT INTO departments (department_id, department_name, location_id) VALUES
+(1, 'HR', 101),
+(2, 'Sales', 102),
+(3, 'IT', 103),
+(4, 'Marketing', 104),
+(5, 'Finance', 105),
+(6, 'Operations', 106),
+(7, 'Legal', 107),
+(8, 'R&D', 108),
+(9, 'Customer Support', 109),
+(10, 'Procurement', 110),
+(11, 'Engineering', 111),
+(12, 'Product Management', 112),
+(13, 'Training', 113),
+(14, 'Logistics', 114),
+(15, 'Business Development', 115),
+(16, 'Public Relations', 116);
+
+5.Insert 20 Records into employees Table.
+Ans: insert into employees values(1,'jaleel','pasha','pashajaleel@gmail.com','7889478934','1994-08-23','it_prog',70000,10,03,05),(2,'ismail','pasha','ismailpasha@gmail.com','8888337894','1980-04-25','hr_rep',98000,12,02,02),(3,'rajesh','mullapudi','rajesh123@gmail.com','7894560234','1992-05-12','sa_rep',50000,12,1,2),(4,'ramudu','sodimella','ramudu345@gmail.com','9874569870','1995-08-17','ad_ast',65980,12,3,5),
+(5,'nargis','fathima','fathima76@gmail.com','9440596300','1994-08-03','mk_man',52000,09,07,4),
+(6,'musrath','fathima','musrath98@gmai;l.com','9440596301','1987-04-04','sa-rep',76500,10,08,03),
+(7,'ilyas','pasha','ilyas786@gmail.com','9440536900','1987-12-25','fi_account',87900,12,05,03),
+(8,'ayisha','siddeeqa','ayisha98@gmail.com','8639765982','1997-12-13','ac_mgr',134500,10,06,03)
+,(9,'jaanu','malladi','jaanunani23@gmail.com','8074953537','1996-12-04','ad-vp',123000,12,05,08),
+(10,'madhu','kalagara','madhu12@gmail.com','7896573452','1999-01-09','fi_mgr',76540,12,09,12),
+(11,'pasha','jaleel','pashajaleel23@gmail.com','7891567238','1987-05-29','engr',89700,10,08,06),
+(12,'navya','relangi','navya@gmail.com','6530097658','1992-08-24','engr',76000,05,06,12),
+(13,'pavan','varma','pavan@gmail.com','7893536108','1986-04-12','ad-vp',76000,12,07,04),
+(14,'prem','mashada','prem@gmail.com','8789092921','1998-09-02','engr',65400,12,05,12),
+(15,'hemanth','mangena','hemanth@gamil.com','9292909012','1998-07-05','hr',76400,03,06,06),
+(16,'harsha','mahankali','harsh@gmail.com','7893456789','1997-05-13','fi_mgr',125000,04,05,06),
+(17,'sai','malla','sai@gmail.com','965788890','1986-12-05','mk_man',67000,12,05,04),
+(18,'shreyas','iyer','shreyas12@gmail.com','9394959697','1994-12-19','ad_ast',56000,10,05,12),
+(19,'rohit','sharma','sharma@gmail.com','8976456789','1989-06-27','hr',89000,10,06,05),
+(20,'virat','kohli','virat@gmail.com','9492701353','1995-04-04','fi_mgr',47000,10,05,12);
+
+
+Queries:
+1.Select employees first name, last name, job_id and salary whose first name starts with alphabet S.
+Ans : select first_name,last_name,job_id,salary from employees where first_name like 's%';
+2.Write a query to select employee with the highest salary.
+Ans select * from employees where salary = (select max(salary) from employees);
+3.Select employee with the second highest salary
+Ans : select * from employees where salary = ( select max(salary) from employees where salary< (select max(salary) from employee))s:
+4.Fetch employees with 2nd or 3rd highest salary.
+Ans : select e.*from employees e join(select distinct salary from employees order by salary desc limit 2 )as salaries on e.salary = salaries.salary;
+
+5.Write a query to select employees and their corresponding managers and their salaries.
+Now, this is a classic example of SELF JOIN in SQL exercises. Also, use the CONCAT function to concatenate the first name and last name of each employee and manager.
+Ans : select concat(e.first_name,'',e.last_name) as employee_name,e.salary as employee_salary, concat(m.first_name,'',m.last_name)as manager_salary from employees e left join employees m on e.manager_id = m.employee_id;
+6.Write a query to show count of employees under each manager in descending order.
+ans: SELECT manager_id, COUNT(*) AS employee_count
+FROM employees
+GROUP BY manager_id
+ORDER BY employee_count DESC;
+7.Find the count of employees in each department.
+Ans : select department_id,count(*) as employee_count from employees group by department_id;
+8.Get the count of employees hired year wise.
+Ans: SELECT EXTRACT(YEAR FROM hire_date) AS hire_year, COUNT(*) AS employee_count
+FROM employees
+GROUP BY hire_year
+ORDER BY hire_year;
+9.Find the salary range of employees.
+Ans SELECT MIN(salary) , MAX(salary) from employees;
+
+10.Write a query to divide people into three groups based on their salaries.
+ans: SELECT first_name, last_name, salary,
+       CASE 
+           WHEN salary < 50000 THEN 'Low Salary'
+           WHEN salary BETWEEN 50000 AND 100000 THEN 'Medium Salary'
+           ELSE 'High Salary'
+       END AS salary_group
+FROM employees;
+11.Select the employees whose first_name contains “an”.
+Ans:SELECT first_name
+FROM employees
+WHERE first_name LIKE '%an%';
+12.Select employee first name and the corresponding phone number in the format (_ _ _)-(_ _ _)-(_ _ _ _).
+  Ans:SELECT first_name, 
+       CONCAT('(', SUBSTRING(phone_number, 1, 3), ')-', 
+              SUBSTRING(phone_number, 4, 3), '-', 
+              SUBSTRING(phone_number, 7, 4)) AS formatted_phone
+FROM employees;
+
+13.Find the employees who joined in August, 1994.
+Ans: select * from employees where hire_date between '1994-08-01' and '1994-08-31';
+ 
+14.Write an SQL query to display employees who earn more than the average salary in that company.
+Ans: SELECT * 
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+15.Find the maximum salary from each department.
+  Ans: SELECT department_id, MAX(salary) AS max_salary
+FROM employees
+GROUP BY department_id;
+16.Write a SQL query to display the 5 least earning employees.
+Ans: SELECT * 
+FROM employees
+ORDER BY salary ASC
+LIMIT 5;
+17.Find the employees hired in the 80s.
+Ans :   select first_name,last_name,hire_date from employees where hire_date between '1980-01-01' and '1989-12-31';
+18.Display the employees first name and the name in reverse order.
+Ans: SELECT REVERSE(first_name) AS reversed_first_name, FROM employees;
+
+19.Find the employees who joined the company after 15th of the month.
+Ans:SELECT * 
+FROM employees
+WHERE EXTRACT(DAY FROM hire_date) > 15;
+20.Display the managers and the reporting employees who work in different departments.
+Ans :  SELECT e.first_name AS employee_name, 
+       m.first_name AS manager_name, 
+       e.department_id AS employee_dept, 
+       m.department_id AS manager_dept
+FROM employees e
+JOIN employees m ON e.manager_id = m.employee_id
+WHERE e.department_id != m.department_id;
+ 
