@@ -1,0 +1,161 @@
+Basic Git Questions
+1.What is Git and why is it used?
+Ans: Git is a distributed version control system that allows developers to track and manage changes to code over time. It enables multiple people to collaborate on the same project by keeping track of every modification made to the project files. It helps in maintaining a history of changes and supports collaboration in an efficient manner.
+2.Explain the difference between Git and GitHub.
+Ans: Git is a version control system that helps you manage code changes locally on your computer.
+GitHub is a cloud-based hosting service for Git repositories. It allows you to store Git repositories online, share them with others, and collaborate in real time. GitHub also offers features like issue tracking, pull requests, and code reviews.
+3.How do you install Git on your machine?
+Ans: To install Git, follow these steps:
+On Windows: Download the installer from git-scm.com and run it.
+On MacOS: You can install Git via Homebrew with the command: brew install git
+On Linux: Use your package manager. For Ubuntu/Debian-based systems, use: sudo apt install git
+4.How do you configure your username and email in Git?
+Ans:After installing Git, you should configure your username and email for commit tracking.
+Set username: git config --global user.name "Your Name"
+Set email: git config --global user.email "your-email@example.com"
+
+5.What is a repository in Git?
+Ans: A repository (or repo) is a collection of files and directories that Git tracks. It contains all the project files and the entire history of changes made to those files. A repository can be either local (on your machine) or remote (on a platform like GitHub).
+
+6.How do you create a new Git repository?
+Ans:To create a new Git repository, navigate to the project directory and run:
+
+git init
+
+7.How do you clone a repository from GitHub?
+Ans:To clone a repository from GitHub, you need the URL of the repository. You can find the URL from the repository’s GitHub page. Then, run:
+
+
+git clone https://github.com/username/repository-name.git
+
+8.What is the purpose of the .gitignore file?
+Ans: The .gitignore file is used to specify files or directories that Git should ignore. This is useful for excluding files like configuration files, log files, or compiled binaries that do not need to be tracked in version control.
+
+9.How do you check the status of your working directory in Git?
+Ans:To check the status of your working directory, use:
+
+git status
+
+
+10.How do you add files to the staging area in Git?
+Ans:  To add files to the staging area, you use the git add command. For example:
+Add a specific file: git add file.txt
+Add all changed files: git add .
+
+Intermediate Git Questions
+11.Explain the concept of commits in Git.
+Ans: A commit in Git is a snapshot of your project at a particular point in time. It captures the changes made to the tracked files and saves them in the repository’s history. Each commit has a unique identifier (commit hash) and stores metadata such as the author, timestamp, and a commit message describing the changes. Commits allow you to track project history and revert to earlier versions if needed.
+
+12.How do you create a new commit in Git?
+Ans: After adding files to the staging area using git add, you can create a commit using:
+
+git commit -m "Your commit message"
+
+
+13.What is the purpose of the git log command?
+Ans: The git log command shows the commit history of a repository. It lists the commits in reverse chronological order, displaying details such as commit hashes, author information, date, and commit messages. It’s useful for tracking changes and understanding the history of a project.
+
+14.How do you view the history of commits in a repository?
+Ans : To view the history of commits, simply run:
+
+git log
+
+15.How do you view the changes made in a commit?
+Ans: To view the changes made in a specific commit, use the command:
+
+git show <commit-hash>
+
+16.What is branching in Git and why is it useful?
+Ans: Branching in Git allows you to create separate lines of development within the same repository. This is useful because you can work on different features or fixes in isolation without affecting the main (or other) branches. For example, you can create a new branch to work on a new feature, and once it's done, you can merge it back into the main branch. Branches help with parallel development, collaboration, and keeping the main branch stable.
+
+17.How do you create a new branch in Git?
+Ans: To create a new branch, run:
+
+git branch <branch-name>
+
+This creates a new branch, but you are still on the current branch. To switch to the newly created branch, use:
+
+git checkout <branch-name>
+
+Or, you can create and switch to a new branch in a single command using:
+
+
+git checkout -b <branch-name>
+
+
+18.How do you switch between branches in Git?
+Ans: To switch between branches, use:
+
+git checkout <branch-name>
+This changes your working directory to the specified branch. You can also use git switch <branch-name> as a more intuitive command to change branches, available in newer versions of Git.
+
+
+19.What is the difference between git merge and git rebase?
+Ans: git merge: Combines the changes from one branch into another by creating a new "merge commit." It preserves the history of both branches and is typically used in collaborative workflows.
+git rebase: Re-applies commits from one branch onto another, essentially rewriting history to make it look as if the commits were made directly on top of the target branch. It results in a linear commit history, which is cleaner but can be more complex to handle, especially in shared branches.
+
+20.How do you resolve merge conflicts in Git?
+Ans:Merge conflicts occur when Git cannot automatically merge changes from different branches. To resolve them:
+Identify the files with conflicts by running:
+
+git status
+Open the conflicted files. Git will mark the conflict areas with markers like:
+
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> <other-branch>
+Edit the file to keep the desired changes and remove the conflict markers.
+Once resolved, stage the changes with:
+
+git add <conflicted-file>
+Complete the merge with a commit:
+
+git commit
+If you were in the middle of a rebase, you can use git rebase --continue to proceed after resolving conflicts.
+
+
+
+Git Exercises
+21.Create a new Git repository and configure your username and email.
+      22.Create a file, add some content to it, and commit the changes.
+23.Create a .gitignore file and add rules to ignore specific files and directories.
+24.Clone an existing repository from GitHub and make some changes.
+25.Create a new branch, make some changes, and switch back to the main branch.
+# 21. Initialize repo and configure username/email
+git init
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+# 22. Create file, add content, and commit
+echo "This is some initial content." > example.txt
+git add example.txt
+git commit -m "Add example.txt with initial content"
+
+# 23. Create .gitignore and commit it
+touch .gitignore
+echo "*.log" >> .gitignore
+echo "node_modules/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".DS_Store" >> .gitignore
+git add .gitignore
+git commit -m "Add .gitignore file with rules to ignore log files and node_modules"
+
+# 24. Clone a repo and make changes
+git clone https://github.com/username/repository-name.git
+cd repository-name
+echo "Adding new content" >> newfile.txt
+git add newfile.txt
+git commit -m "Add newfile.txt with some new content"
+
+# 25. Create a new branch, make changes, and switch back to main
+git branch feature-branch
+git checkout feature-branch
+echo "This is a feature branch" >> feature.txt
+git add feature.txt
+git commit -m "Add feature.txt with content for feature branch"
+git checkout main
+git merge feature-branch 
+
+
