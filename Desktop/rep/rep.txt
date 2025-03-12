@@ -1,0 +1,1 @@
+reposoitory is collection of files and directories that git track.it contains all the porject file and hsitory of changes made to those files.
